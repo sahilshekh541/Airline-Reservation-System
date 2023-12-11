@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="airlinereservationsystemDataSet" targetNamespace="http://tempuri.org/airlinereservationsystemDataSet.xsd" xmlns:mstns="http://tempuri.org/airlinereservationsystemDataSet.xsd" xmlns="http://tempuri.org/airlinereservationsystemDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="airlinereservationsystemConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="airlinereservationsystemConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.updateflight.Properties.Settings.GlobalReference.Default.airlinereservationsystemConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="flight_infoTableAdapter" GeneratorDataComponentClassName="flight_infoTableAdapter" Name="flight_info" UserDataComponentName="flight_infoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="airlinereservationsystemConnectionString (Settings)" DbObjectName="dbo.flight_info" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT deptdate FROM dbo.flight_info</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="deptdate" DataSetColumn="deptdate" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="airlinereservationsystemDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="airlinereservationsystemDataSet" msprop:Generator_UserDSName="airlinereservationsystemDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="flight_info" msprop:Generator_TableClassName="flight_infoDataTable" msprop:Generator_TableVarName="tableflight_info" msprop:Generator_RowChangedName="flight_infoRowChanged" msprop:Generator_TablePropName="flight_info" msprop:Generator_RowDeletingName="flight_infoRowDeleting" msprop:Generator_RowChangingName="flight_infoRowChanging" msprop:Generator_RowEvHandlerName="flight_infoRowChangeEventHandler" msprop:Generator_RowDeletedName="flight_infoRowDeleted" msprop:Generator_RowClassName="flight_infoRow" msprop:Generator_UserTableName="flight_info" msprop:Generator_RowEvArgName="flight_infoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="deptdate" msprop:Generator_ColumnVarNameInTable="columndeptdate" msprop:Generator_ColumnPropNameInRow="deptdate" msprop:Generator_ColumnPropNameInTable="deptdateColumn" msprop:Generator_UserColumnName="deptdate">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

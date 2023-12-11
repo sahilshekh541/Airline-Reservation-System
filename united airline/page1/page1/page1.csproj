@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CA7DAD14-E333-4329-9F17-BB7295E2E0A6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>page1</RootNamespace>
+    <AssemblyName>page1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="airlinereservationsystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>airlinereservationsystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include=".Designer.cs" />
+    <Compile Include="addemployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addemployee.Designer.cs">
+      <DependentUpon>addemployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addfights.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addfights.Designer.cs">
+      <DependentUpon>addfights.cs</DependentUpon>
+    </Compile>
+    <Compile Include="airlinereservationsystemDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>airlinereservationsystemDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="airlinereservationsystemDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>airlinereservationsystemDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bookticketresult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookticketresult.Designer.cs">
+      <DependentUpon>bookticketresult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Booktickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Booktickets.Designer.cs">
+      <DependentUpon>Booktickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cancelticket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cancelticket.Designer.cs">
+      <DependentUpon>cancelticket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="canceltickteresult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="canceltickteresult.Designer.cs">
+      <DependentUpon>canceltickteresult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="databaseconnections.cs" />
+    <Compile Include="employeelogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employeelogin.Designer.cs">
+      <DependentUpon>employeelogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="flightoccupancy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="flightoccupancy.Designer.cs">
+      <DependentUpon>flightoccupancy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="finalupdateflight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="finalupdateflight.Designer.cs">
+      <DependentUpon>finalupdateflight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="page1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="page1.Designer.cs">
+      <DependentUpon>page1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="page2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="page2.Designer.cs">
+      <DependentUpon>page2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="page3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="page3.Designer.cs">
+      <DependentUpon>page3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="page4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="page4.Designer.cs">
+      <DependentUpon>page4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="page5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="page5.Designer.cs">
+      <DependentUpon>page5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="passengerinformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="passengerinformation.Designer.cs">
+      <DependentUpon>passengerinformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="passengerlist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="passengerlist.Designer.cs">
+      <DependentUpon>passengerlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="paymentpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="paymentpage.Designer.cs">
+      <DependentUpon>paymentpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="printicketopt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="printicketopt.Designer.cs">
+      <DependentUpon>printicketopt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="printticketresult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="printticketresult.Designer.cs">
+      <DependentUpon>printticketresult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="printoptticketresult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="printoptticketresult.Designer.cs">
+      <DependentUpon>printoptticketresult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportview1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportview1.Designer.cs">
+      <DependentUpon>reportview1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="selectseats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selectseats.Designer.cs">
+      <DependentUpon>selectseats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateflightinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateflightinfo.Designer.cs">
+      <DependentUpon>updateflightinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateseatno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateseatno.Designer.cs">
+      <DependentUpon>updateseatno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateticket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateticket.Designer.cs">
+      <DependentUpon>updateticket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateticketpaymentpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateticketpaymentpage.Designer.cs">
+      <DependentUpon>updateticketpaymentpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateticketresult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateticketresult.Designer.cs">
+      <DependentUpon>updateticketresult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewcanceltickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewcanceltickets.Designer.cs">
+      <DependentUpon>viewcanceltickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewflightlist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewflightlist.Designer.cs">
+      <DependentUpon>viewflightlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewpayments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewpayments.Designer.cs">
+      <DependentUpon>viewpayments.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addemployee.resx">
+      <DependentUpon>addemployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addfights.resx">
+      <DependentUpon>addfights.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookticketresult.resx">
+      <DependentUpon>bookticketresult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Booktickets.resx">
+      <DependentUpon>Booktickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cancelticket.resx">
+      <DependentUpon>cancelticket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="canceltickteresult.resx">
+      <DependentUpon>canceltickteresult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employeelogin.resx">
+      <DependentUpon>employeelogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="finalupdateflight.resx">
+      <DependentUpon>finalupdateflight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="flightoccupancy.resx">
+      <DependentUpon>flightoccupancy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="page1.resx">
+      <DependentUpon>page1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="page2.resx">
+      <DependentUpon>page2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="page3.resx">
+      <DependentUpon>page3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="page4.resx">
+      <DependentUpon>page4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="page5.resx">
+      <DependentUpon>page5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="passengerinformation.resx">
+      <DependentUpon>passengerinformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="passengerlist.resx">
+      <DependentUpon>passengerlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paymentpage.resx">
+      <DependentUpon>paymentpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="printicketopt.resx">
+      <DependentUpon>printicketopt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="printticketresult.resx">
+      <DependentUpon>printticketresult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="printoptticketresult.resx">
+      <DependentUpon>printoptticketresult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportview1.resx">
+      <DependentUpon>reportview1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selectseats.resx">
+      <DependentUpon>selectseats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateflightinfo.resx">
+      <DependentUpon>updateflightinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateseatno.resx">
+      <DependentUpon>updateseatno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateticket.resx">
+      <DependentUpon>updateticket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateticketpaymentpage.resx">
+      <DependentUpon>updateticketpaymentpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateticketresult.resx">
+      <DependentUpon>updateticketresult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewcanceltickets.resx">
+      <DependentUpon>viewcanceltickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewflightlist.resx">
+      <DependentUpon>viewflightlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewpayments.resx">
+      <DependentUpon>viewpayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="airlinereservationsystemDataSet.xsc">
+      <DependentUpon>airlinereservationsystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="airlinereservationsystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>airlinereservationsystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="airlinereservationsystemDataSet.xss">
+      <DependentUpon>airlinereservationsystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="airlinereservationsystemDataSet1.xsc">
+      <DependentUpon>airlinereservationsystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="airlinereservationsystemDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>airlinereservationsystemDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="airlinereservationsystemDataSet1.xss">
+      <DependentUpon>airlinereservationsystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="airlinereservationsystemDataSet2.xsc">
+      <DependentUpon>airlinereservationsystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="airlinereservationsystemDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>airlinereservationsystemDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="airlinereservationsystemDataSet2.xss">
+      <DependentUpon>airlinereservationsystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="airlinereservationsystem.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="airlinereservationsystem_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>airlinereservationsystem.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\help2.png" />
+    <None Include="Resources\help1.png" />
+    <None Include="Resources\help.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\plane-tickets.png" />
+    <None Include="Resources\airplane-ticket.png" />
+    <None Include="Resources\setamap.jpg" />
+    <None Include="Resources\transfer1.png" />
+    <None Include="Resources\transfer.png" />
+    <None Include="Resources\fly.ico" />
+    <None Include="Resources\unitedplane.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
